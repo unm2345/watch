@@ -135,15 +135,16 @@
         scrollTrigger: {
           trigger: ".face",
           start: "top 50%",
-          end: "top top",
+          end: "bottom 50%",
           scrub: 1,
+          ease: Power0.easeNone
         }
       });
       gsap.utils.toArray(".face-screen").forEach((ele, idx)=>{      
         if(idx == 0) return;
         tl.to(".js-face-track", {
           x : -ele.offsetWidth * idx,
-          duration: 2
+          duration: 1
         }, "+=1")
       })
     },
@@ -165,9 +166,10 @@
         yPercent: -70,        
         scrollTrigger: {
           trigger: ".analysis",
-          start: "top 50%",
-          end: "top top",
-          scrub: 1
+          start: "top 30%",
+          end: "bottom 70%",
+          scrub: 1,
+          ease: Power0.easeNone
         }
       })
     },
