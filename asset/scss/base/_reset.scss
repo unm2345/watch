@@ -40,15 +40,13 @@ table {
 }
 
 body {
-    font-size: 14px;
+    color: #000;
+    line-height: 1;
+    font-size: 16px;
     color:inherit;
-    line-height: normal;
     scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
-body,
 input,
 textarea,
 select,
@@ -65,7 +63,6 @@ code {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .hidden,
@@ -89,74 +86,16 @@ a {
     }
 }
 
+img{
+  vertical-align: top;
+}
+
 button {
+    color: #000;
     border: 0;
     background-color: transparent;
     cursor: pointer;
     &:disabled {
         cursor: not-allowed;
-    }
-}
-
-select,
-input,
-textarea,
-button {
-    -webkit-appearance: none;
-}
-
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-
-input:disabled {
-    background-color: rgba(255, 255, 255, 0);
-    cursor: not-allowed;
-}
-
-select {
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    &::-ms-expand {
-        display: none;
-    }
-}
-
-input,
-textarea {
-    font-size: inherit;
-    border: 0;
-    &::placeholder {
-        /* Chrome, Safari, Firefox */
-        color: #444;
-        opacity: 1;
-    }
-    &:-ms-input-placeholder {
-        /* IE, Edge */
-        color: #444;
-        opacity: 1;
-    }
-    &[readonly],
-    &:disabled {
-        &::placeholder {
-            /* Chrome, Safari, Firefox */
-            color: rgba(#000, 0.2);
-            opacity: 1;
-        }
-        &:-ms-input-placeholder {
-            /* IE, Edge */
-            color: rgba(#000, 0.2);
-            opacity: 1;
-        }
-    }
-    &::-ms-clear,
-    &::-ms-reveal {
-        /* IE, Edge */
-        display: none;
-    }
-    &::-webkit-inner-spin-button,
-    &::-webkit-outer-spin-button {
-        -webkit-appearance: none;
     }
 }
